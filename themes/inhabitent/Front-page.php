@@ -22,15 +22,15 @@ get_header(); ?>
             <div class = "product-type-blocks">
                 <div class = "product-type-wrapper">
 				<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+                <p> <a href = "" class = "Btn">Do stuff</a></p>
 </div>
             	<div class = "product-type-wrapper">
-
-				<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+                <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+                <p> <a href = "" class = "Btn">Eat stuff</a></p>
 </div>
                 <div class = "product-type-wrapper">
-
-				<p>Get a good night's rest in the wild in a home away from home that travels well</p>
-
+                <p>Get a good night's rest in the wild in a home away from home that travels well</p>
+                <p> <a href = "" class = "Btn">Sleep stuff</a></p>
 </div>
 </div>
 	</section>
