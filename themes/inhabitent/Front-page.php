@@ -43,8 +43,11 @@ get_header(); ?>
 <div class = "content-wrap">
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 	<article class = "wrap-posts">
-   <h3><?php echo get_the_title() ?></h3>
    <img class = "images-1010" src = "<?php echo get_the_post_thumbnail_url(); ?>">
+   <h3><?php echo get_the_title() ?>
+   <a href="https://tent.academy.red/van-camping-photo-contest/" rel="bookmark">Van Camping Photo Contest</a>
+</h3>
+
    </article>
 
 <?php endforeach; wp_reset_postdata(); ?>
