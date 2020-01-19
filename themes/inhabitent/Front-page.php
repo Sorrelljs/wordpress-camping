@@ -15,10 +15,9 @@ get_header(); ?>
 </div>
 </section>
 
-
         <section class ="product-info-container">
             <h2 class = "shop">Shop Stuff </h2>
-
+            
             <div class = "product-type-blocks">
                 <div class = "product-type-wrapper">
 				<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
@@ -44,7 +43,9 @@ get_header(); ?>
 <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 	<article class = "wrap-posts">
    <img class = "images-1010" src = "<?php echo get_the_post_thumbnail_url(); ?>">
-   <h3><?php echo get_the_title() ?>
+   <span class = "date-post"><?php echo get_the_date(); ?>
+   <h3 class = "title-post"><?php echo get_the_title(); ?>
+
    <a href="https://tent.academy.red/van-camping-photo-contest/" rel="bookmark">Van Camping Photo Contest</a>
 </h3>
 

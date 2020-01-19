@@ -1,0 +1,30 @@
+.journal_title{
+    font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 47%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #248a83;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    padding-top: 0px;
+    margin-top: 25px;
+    &:hover {
+        color: rgb(240, 240, 186);
+    }
+}
+
+.entry-meta {
+    background-color: #248a83;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    position: relative;
+    margin-right: 40p;
+    bottom: 10px;
+    text-transform: uppercase;
+    right: 332px;
+    padding: 3px;
+}

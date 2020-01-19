@@ -58,8 +58,9 @@ function create_product_type() {
 		'capability_type'       => 'page',
         'show_in_rest'          => true,
         'template_lock'         => true, 
-        'template'              => array( 'core/paragraph', array( 'placeholder' => 'Add Description...',
-        ) ),
+		'template'				=> array(array('core/paragraph', array(
+			'placeholder' => 'Add Description...',
+		)))
 	);
 	register_post_type( 'product', $args );
 

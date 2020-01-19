@@ -7,7 +7,7 @@
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
-!plugins/product-function/
+!plugins/product-functions/
 !plugins/inhabitent-blocks-master/
 # Ignore everything in "themes" except the active theme. #
 themes/*
