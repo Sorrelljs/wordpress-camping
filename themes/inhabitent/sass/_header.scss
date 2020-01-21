@@ -31,10 +31,13 @@
 .logo {
     background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
     background-size: 50px 33px;
+    display: inline-block;
 }
 
-.main-navigation {
+.main-navigation {   
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-transform: uppercase;
 }
 
@@ -42,4 +45,9 @@
     line-height: 1;
     padding-left: 1.5rem;
 
+}
+
+.menu-menu-container {
+    position: relative;
+    left: 390px;
 }

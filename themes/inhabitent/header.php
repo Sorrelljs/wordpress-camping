@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<?php wp_head(); ?>
 	</head>
@@ -26,12 +27,14 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+		
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+
 				<div class = "logo">
 					<a href ="https://tent.academy.red/" rel = "home">
 					<h1 class = "site-title">Inhabitent</h1>
 					</a>
 					</div>
-				<nav id="site-navigation" class="main-navigation" role="navigation">
 					
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

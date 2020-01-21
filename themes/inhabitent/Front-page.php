@@ -15,26 +15,29 @@ get_header(); ?>
 </div>
 </section>
 
-        <section class ="product-info-container">
-            <h2 class = "shop">Shop Stuff </h2>
-            
-            <div class = "product-type-blocks">
-                <div class = "product-type-wrapper">
-				<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-                <p> <a href = "" class = "Btn">Do stuff</a></p>
-</div>
-            	<div class = "product-type-wrapper">
-                <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-                <p> <a href = "" class = "Btn">Eat stuff</a></p>
-</div>
-                <div class = "product-type-wrapper">
-                <p>Get a good night's rest in the wild in a home away from home that travels well</p>
-                <p> <a href = "" class = "Btn">Sleep stuff</a></p>
-</div>
-</div>
-	</section>
-		<h2 class = "shop2">Inhabitent Journal</h2>
+        <?php $taxonmies = get_terms('product_type');?>
+
+<section class ="product-info-container">
+            <h2 class = "shop-stuff-title">Shop Stuff </h2>
+
+        <div class = "product-container123">
+        <?php foreach ($taxonmies as $term) : ?>
+            <div class ="product-type-wrapper">
+            <img class = "icon-image" src = "<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term ->slug . '.svg'?>"/>
+            <p class = "product-type-blocks"><?php echo $term->description; ?></p>
+            <div class = "btn-container"><p class = "product-type-button"><?php echo $term->name;?></p></div>
+        </div>
+        <?php endforeach;?>
+
+        </div>
+    </section>
+    
+    
+		<h2 class = "inhabitent-journal-title">Inhabitent Journal</h2>
+
+    
 <!--  CUSTOM POST LOOP -->
+
 	<?php
    $args = array( 'post_type' => 'post', 'numberposts' => '3' );
    $posts = get_posts( $args ); // returns an array of posts
@@ -44,10 +47,11 @@ get_header(); ?>
 	<article class = "wrap-posts">
    <img class = "images-1010" src = "<?php echo get_the_post_thumbnail_url(); ?>">
    <span class = "date-post"><?php echo get_the_date(); ?>
+   <?php comments_number() ?>
    <h3 class = "title-post"><?php echo get_the_title(); ?>
-
-   <a href="https://tent.academy.red/van-camping-photo-contest/" rel="bookmark">Van Camping Photo Contest</a>
 </h3>
+
+
 
    </article>
 

@@ -16,7 +16,7 @@ get_header(); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-			<h1>about</h1>
+			<h1 class = "about-title">about</h1>
 
 			<h2 class = "about-us-text">Our Story</h2>
 

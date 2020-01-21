@@ -4,10 +4,19 @@ header.entry-header.hero-image-header {
   }
 
   .site-header {
-    position: absolute;
     text-decoration: none;
   }
 
+.about-title {
+    color: white;
+    margin-bottom: 0;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    top: -411px;
+    position: relative;
+
+}
   h1.entry-title {
     color: #fff;
     margin-bottom: 0;
