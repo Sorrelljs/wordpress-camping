@@ -16,6 +16,7 @@
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				//	the_archive_img('<img class = "page-img">)'
 				?>
 			</header><!-- .page-header -->
 
