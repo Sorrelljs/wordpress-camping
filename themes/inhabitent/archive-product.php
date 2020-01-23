@@ -10,14 +10,21 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 <div class = whole-content-block>
-		<?php if ( have_posts() ) : ?>
+
+
+<?php $taxonmies = get_terms('product_type');?>
+<?php if ( have_posts() ) : ?>
+	
+	<header class="page-header">
 		
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				//	the_archive_img('<img class = "page-img">)'
-				?>
+		<h2 class = "header-shop-tax">shop stuff</h2> 
+		<div class ="product-type-wrapper123">
+		<?php foreach ($taxonmies as $term) : ?>
+		
+						<?php echo $term->name;?>
+				<?php endforeach;?>
+		</div>
+		
 			</header><!-- .page-header -->
 			<section class = "content-container">
 			<?php /* Start the Loop */ ?>
@@ -42,5 +49,4 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

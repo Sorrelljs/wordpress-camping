@@ -1,6 +1,13 @@
 <!-- This file is used to markup the public-facing widget. -->
 
+<H1>
+<?php if (strlen(trim($title)) > 0) : ?>
 
+<?php echo $title; ?>
+
+<?php endif; ?>
+
+</h1>
 <P>
 <?php if (strlen(trim($weekdays)) > 0) : ?>
 

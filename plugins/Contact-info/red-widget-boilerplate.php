@@ -97,18 +97,19 @@ class Contact_info extends WP_Widget {
 		$widget_string = $before_widget;
 
 		// Manipulate the widget's values based on their input fields
-		$title = empty( $instance['Title'] ) ? '' : apply_filters( 'widget_title', $instance['Title'] );
-		$weekdays = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
-		$saturdays = empty( $instance['Phone'] ) ? '' : apply_filters( 'Phone', $instance['Phone'] );
+		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
+		$Email = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
+		$Phone = empty( $instance['Phone'] ) ? '' : apply_filters( 'Phone', $instance['Phone'] );
+		$Address = empty( $instance['Address'] ) ? '' : apply_filters( 'Address', $instance['Address'] );
 		
 		// TODO: other fields go here...
 
 		ob_start();
 
 		if ( $title ){
-			$widget_string .= $before_titles;
+			$widget_string .= $before_title;
 			$widget_string .= $title;
-			$widget_string .= $after_titles;
+			$widget_string .= $after_title;
 		}
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
@@ -129,9 +130,11 @@ class Contact_info extends WP_Widget {
 
 		$instance = $old_instance;
 
-		$instance['Title'] = strip_tags( $new_instance['Title'] );
+		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['Email'] = strip_tags( $new_instance['Email'] );
 		$instance['Phone'] = strip_tags( $new_instance['Phone'] );
+		$instance['Address'] = strip_tags( $new_instance['Address'] );
+	
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -149,17 +152,17 @@ class Contact_info extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'Title' => 'Buisness Hours',
+				'title' => 'Contact info',
 				'Email' => 'jimmy@jimmy.com',
 				'Phone' => '604704',
-				
-		
+				'Address' => '1831 robson street'
 			)
 		);
 
-		$Title = strip_tags( $instance['Title'] );
-		$Weekdays = strip_tags( $instance['Email'] );
-		$Saturdays = strip_tags( $instance['Phone'] );
+		$title = strip_tags( $instance['title'] );
+		$Email = strip_tags( $instance['Email'] );
+		$Phone = strip_tags( $instance['Phone'] );
+		$Address = strip_tags( $instance['Address'] );
 	
 		// TODO: Store the rest of values of the widget in their own variables
 

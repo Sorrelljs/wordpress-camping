@@ -96,8 +96,8 @@ class Business_Hours extends WP_Widget {
 
 		$widget_string = $before_widget;
 
+		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 		// Manipulate the widget's values based on their input fields
-		$title = empty( $instance['Title'] ) ? '' : apply_filters( 'widget_title', $instance['Title'] );
 		$weekdays = empty( $instance['Weekdays'] ) ? '' : apply_filters( 'Weekdays', $instance['Weekdays'] );
 		$saturdays = empty( $instance['Saturdays'] ) ? '' : apply_filters( 'Saturdays', $instance['Saturdays'] );
 		$sundays = empty( $instance['Sundays'] ) ? '' : apply_filters( 'Sundays', $instance['Sundays'] );
@@ -107,9 +107,9 @@ class Business_Hours extends WP_Widget {
 		ob_start();
 
 		if ( $title ){
-			$widget_string .= $before_titles;
+			$widget_string .= $before_title;
 			$widget_string .= $title;
-			$widget_string .= $after_titles;
+			$widget_string .= $after_title;
 		}
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
@@ -130,7 +130,7 @@ class Business_Hours extends WP_Widget {
 
 		$instance = $old_instance;
 
-		$instance['Title'] = strip_tags( $new_instance['Title'] );
+		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['Weekdays'] = strip_tags( $new_instance['Weekdays'] );
 		$instance['Saturdays'] = strip_tags( $new_instance['Saturdays'] );
 		$instance['Sundays'] = strip_tags( $new_instance['Sundays'] );
@@ -151,7 +151,7 @@ class Business_Hours extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'Title' => 'Buisness Hours',
+				'title' => 'Buisness Hours',
 				'Weekdays' => '9am-5pm',
 				'Saturdays' => '10am  4pm',
 				'Sundays' => 'Closed'
@@ -159,7 +159,7 @@ class Business_Hours extends WP_Widget {
 			)
 		);
 
-		$Title = strip_tags( $instance['Title'] );
+		$title = strip_tags( $instance['title'] );
 		$Weekdays = strip_tags( $instance['Weekdays'] );
 		$Saturdays = strip_tags( $instance['Saturdays'] );
 		$Sundays = strip_tags( $instance['Sundays'] );

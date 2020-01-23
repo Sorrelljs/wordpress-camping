@@ -24,3 +24,15 @@
 
 </p>
 
+
+<P>
+<?php if (strlen(trim($Address)) > 0) : ?>
+
+<span class = "Address">Address:</span>
+
+<?php echo $Address; ?>
+
+<?php endif; ?>
+
+</p>
+

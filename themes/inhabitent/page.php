@@ -8,41 +8,45 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<div class = "side-main-container">
+				<main id="main" class="site-main" role="main">
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; // End of the loop. ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<h2 class = "about-us-text">Our Story</h2>
+				<?php endwhile; // End of the loop. ?>
 
-			<p class = "about-us-text1"> 
-	Inhabitent Camping Supply Co. has been Vancouver camping supply icon for more than two whole months!
-	 Customers often comment on the bustle of activity they see in store…that’s where the magic happens every day.</p>
+				<h2 class = "about-us-text321">find us </h2>
+
+				<div class = "google-maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.6886025954973!2d-123.14031648431113!3d49.26334787932925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c79e1ac4fb%3A0x7edde857c28340ba!2sRED%20Academy%20Vancouver!5e0!3m2!1sen!2sca!4v1579751496065!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+				
+				<h2 class = "about-us-text123">We take camping very seriously.</h2>
+
+				<p class = "about-us-text12345"> 
+				Inhabitent Camping Supply Co. knows what it takes to outfit a camping trip right. From flannel shirts to artisanal axes, we’ve got your covered. Please contact us below with any questions comments or suggestions. </p>
+			
 		
-			 <p class = "about-us-text1">We want to bridge the gap between the comfort of city life and the lovely Instagram-worthiness of the great outdoors that surround us.
-				 We sell gear that’s fun and functional. So much fun, in fact, that you’ll want to pitch a tent inside your one-bedroom apartment so you can use it&nbsp;every day. </p>
-	
-				 <h2 class = "about-us-text">Our Team</h2>
+					<h2 class = "about-us-text123">Send us a email!</h2>
 
-				 <p class = "about-us-text1"> Inhabitent&nbsp;Camping Supply Co.’s staff is made up of an amazing team of inspired retail associates. We really know our stuff when it comes to travel hammocks and campfire cooking gadgets. 
-					 From a provincial park campground to the back-country, our staff knows what you need to outfit your outdoor outing.</p>
+				
 
-				<p class = "about-us-text1"> Our shop&nbsp;is nestled away in a lovely little corner of Vancouver.
-					 Pop in, say hi, and try out our tents! </p>
+		
 
-	
+		
+		
+					
+					
+					</main><!-- #main -->
+					<?php get_sidebar(); ?>
+			</div><!-- #primary -->
 
-	
-	
-	
-	
-	</main><!-- #main -->
-	</div><!-- #primary -->
+			</div>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
 
 
