@@ -98,8 +98,8 @@ class Contact_info extends WP_Widget {
 
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
-		$Email = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
 		$Phone = empty( $instance['Phone'] ) ? '' : apply_filters( 'Phone', $instance['Phone'] );
+		$Email = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
 		$Address = empty( $instance['Address'] ) ? '' : apply_filters( 'Address', $instance['Address'] );
 		
 		// TODO: other fields go here...
@@ -131,8 +131,8 @@ class Contact_info extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['Email'] = strip_tags( $new_instance['Email'] );
 		$instance['Phone'] = strip_tags( $new_instance['Phone'] );
+		$instance['Email'] = strip_tags( $new_instance['Email'] );
 		$instance['Address'] = strip_tags( $new_instance['Address'] );
 	
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
@@ -153,15 +153,15 @@ class Contact_info extends WP_Widget {
 			(array) $instance,
 			array(
 				'title' => 'Contact info',
-				'Email' => 'jimmy@jimmy.com',
 				'Phone' => '604704',
-				'Address' => '1831 robson street'
+				'Email' => 'jimmy@jimmy.com',
+				'Address' => '18316666 robson street'
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$Email = strip_tags( $instance['Email'] );
 		$Phone = strip_tags( $instance['Phone'] );
+		$Email = strip_tags( $instance['Email'] );
 		$Address = strip_tags( $instance['Address'] );
 	
 		// TODO: Store the rest of values of the widget in their own variables

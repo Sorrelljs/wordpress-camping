@@ -12,12 +12,7 @@ get_header(); ?>
 			<div class = "side-main-container">
 				<main id="main" class="site-main" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php endwhile; // End of the loop. ?>
-
+			
 				<h2 class = "about-us-text321">find us </h2>
 
 				<div class = "google-maps">

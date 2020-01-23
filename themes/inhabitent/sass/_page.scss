@@ -35,6 +35,19 @@ font-family: Merriweather Web,serif;
 display: grid;
 grid-template-columns: 3fr 1fr;    
 border-top: 1px solid #e1e1e1;
+padding-top: 50px;
+}
+
+.site-main {
+    position: relative;
+    left: 65px;
+    top: 35px;
+}
+
+.main-navigation {
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    bottom: 6px;
 }
 
 
@@ -43,4 +56,8 @@ div#secondary {
     position: relative;
     width: 400px;
     padding: 50px;
+}
+
+.moving-container-size {
+    position: relative;
 }
