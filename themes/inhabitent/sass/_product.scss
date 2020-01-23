@@ -1,0 +1,53 @@
+/****** SHOP PAGE **********/
+
+
+
+
+.whole-content-block {    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.grid-container {
+    border: 1px solid #e1e1e1;
+}
+
+.grid-container-wrapper123 {
+    background-color: #e1e1e1;
+    overflow: hidden;
+    position: relative;
+}
+
+.shop-title123 {
+    font-size: .9rem;
+    padding: .75rem 1rem;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Merriweather Web,serif;
+    letter-spacing: 0;
+    line-height: 1.75;
+    text-transform: none;
+
+}
+
+.price-tag {
+    font-size: .9rem;
+    padding: .75rem 1rem;
+    float: right;
+    padding-left: .25rem;
+}
+
+
+
+
+

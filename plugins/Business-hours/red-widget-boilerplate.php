@@ -6,14 +6,14 @@
  *
  * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
  *
- * @package   Red_Widget
+ * @package   Business-hours
  * @author    Your Name <email@example.com>
  * @license   GPL-2.0+
  * @link      http://example.com
  * @copyright 2020 Sjs development 
  *
  * @wordpress-plugin
- * Plugin Name:       Red_Widget
+ * Plugin Name:       Business-hours
  * Plugin URI:        @TODO
  * Description:       Widget to display business hours
  * Version:           1.0.0
@@ -29,7 +29,7 @@ if ( ! defined ( 'ABSPATH' ) ) {
 }
 
 // TODO: change 'Widget_Name' to the name of your plugin
-class Widget_Name extends WP_Widget {
+class Business_Hours extends WP_Widget {
 
     /**
      * @TODO - Rename "widget-name" to the name your your widget
@@ -40,7 +40,7 @@ class Widget_Name extends WP_Widget {
      *
      * @var      string
      */
-    protected $widget_slug = 'widget-name';
+    protected $widget_slug = 'business-hours';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -54,10 +54,10 @@ class Widget_Name extends WP_Widget {
 		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Widget Name',
+			'Business-hours',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Widget to display widget hours.'
 			)
 		);
 
@@ -97,15 +97,19 @@ class Widget_Name extends WP_Widget {
 		$widget_string = $before_widget;
 
 		// Manipulate the widget's values based on their input fields
-		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
+		$title = empty( $instance['Title'] ) ? '' : apply_filters( 'widget_title', $instance['Title'] );
+		$weekdays = empty( $instance['Weekdays'] ) ? '' : apply_filters( 'Weekdays', $instance['Weekdays'] );
+		$saturdays = empty( $instance['Saturdays'] ) ? '' : apply_filters( 'Saturdays', $instance['Saturdays'] );
+		$sundays = empty( $instance['Sundays'] ) ? '' : apply_filters( 'Sundays', $instance['Sundays'] );
+		
 		// TODO: other fields go here...
 
 		ob_start();
 
 		if ( $title ){
-			$widget_string .= $before_title;
+			$widget_string .= $before_titles;
 			$widget_string .= $title;
-			$widget_string .= $after_title;
+			$widget_string .= $after_titles;
 		}
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
@@ -126,7 +130,10 @@ class Widget_Name extends WP_Widget {
 
 		$instance = $old_instance;
 
-		$instance['title'] = strip_tags( $new_instance['title'] );
+		$instance['Title'] = strip_tags( $new_instance['Title'] );
+		$instance['Weekdays'] = strip_tags( $new_instance['Weekdays'] );
+		$instance['Saturdays'] = strip_tags( $new_instance['Saturdays'] );
+		$instance['Sundays'] = strip_tags( $new_instance['Sundays'] );
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
@@ -144,11 +151,18 @@ class Widget_Name extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'My Widget Title',
+				'Title' => 'Buisness Hours',
+				'Weekdays' => '9am-5pm',
+				'Saturdays' => '10am  4pm',
+				'Sundays' => 'Closed'
+		
 			)
 		);
 
-		$title = strip_tags( $instance['title'] );
+		$Title = strip_tags( $instance['Title'] );
+		$Weekdays = strip_tags( $instance['Weekdays'] );
+		$Saturdays = strip_tags( $instance['Saturdays'] );
+		$Sundays = strip_tags( $instance['Sundays'] );
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
@@ -160,5 +174,5 @@ class Widget_Name extends WP_Widget {
 
 // TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
-     register_widget( 'Widget_Name' );
+     register_widget( 'Business_Hours' );
 });
