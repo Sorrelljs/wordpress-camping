@@ -38,7 +38,7 @@
 
 			</section>
 		</div>
-			<?php the_posts_navigation(); ?>
+			
 
 		<?php else : ?>
 

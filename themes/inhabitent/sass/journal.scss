@@ -16,6 +16,12 @@
     }
 }
 
+.blogpost-reel {
+    position: relative;
+    left: 70px;
+    top: 70px;
+}
+
 .entry-meta {
     background-color: #248a83;
     color: #fff;
@@ -34,4 +40,37 @@
 width: 646px;
 position: relative;
 bottom: 14px;
+}
+
+
+// read more btn
+
+.read-more-btn-container {
+    position: relative;
+    z-index: 3;
+    border: 1px solid black;
+    padding: 10px;
+    width: 14%;
+    box-shadow: black;
+    
+}
+
+.read-more-btn {
+    color:black;
+    text-decoration: none;
+}
+
+
+.email-input {
+    color: #248A83;
+    text-decoration: none;
+}
+
+.phone-input {
+    color: #248A83;
+    text-decoration: none;
+}
+
+.days-of-the-week {
+    font-weight: 600;
 }

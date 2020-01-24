@@ -5,6 +5,8 @@
 
 .whole-content-block {    
     width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -12,9 +14,9 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1.5rem;
-    margin-bottom: 3.5rem;
     position: relative;
     top: 52px;
+    margin-bottom: 6.5rem;
 }
 
 .grid-container {
@@ -58,6 +60,7 @@ text-decoration: none;
 position: relative;
 border-bottom: 1px dotted black;
 bottom: 50px;
+padding: 20px;
 
 }
 

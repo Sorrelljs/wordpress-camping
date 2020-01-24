@@ -25,8 +25,10 @@ get_header(); ?>
             <div class ="product-type-wrapper">
             <img class = "icon-image" src = "<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term ->slug . '.svg'?>"/>
             <p class = "product-type-blocks"><?php echo $term->description; ?></p>
-            <div class = "btn-container"><p class = "product-type-button"><?php echo $term->name;?></p></div>
+            <div class = "btn-container">
+               <p class = "product-type-button"><?php echo $term->name;?></p></div>
         </div>
+
         <?php endforeach;?>
 
         </div>
@@ -47,12 +49,16 @@ get_header(); ?>
 	<article class = "wrap-posts">
    <img class = "images-1010" src = "<?php echo get_the_post_thumbnail_url(); ?>">
    <span class = "date-post"><?php echo get_the_date(); ?>
+   
    <?php comments_number() ?>
    <h3 class = "title-post"><?php echo get_the_title(); ?>
 </h3>
 
 
 
+<p class = "read-more-btn-container123">
+				<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn123">Read entry</a>
+		</p>
    </article>
 
 <?php endforeach; wp_reset_postdata(); ?>

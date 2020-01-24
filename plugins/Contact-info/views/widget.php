@@ -2,24 +2,25 @@
 
 
 
-<P>
+<p class = "phone123">
 <?php if (strlen(trim($Phone)) > 0) : ?>
 
-<span class = "Phone">Phone:</span>
+    <i class="fa fa-phone"></i>
 
-<?php echo $Phone; ?>
+    <a href="tel:7784567891" class = "phone-input"><?php echo $Phone; ?></a>
 
 <?php endif; ?>
 
 </p>
 
 
-<P>
+<p class = "email123">
+<i class="fa fa-envelope"></i>
 <?php if (strlen(trim($Email)) > 0) : ?>
 
-<span class = "Email">Email:</span>
 
-<?php echo $Email; ?>
+        
+<a href="mailto:info@inhabitent.com" class = "email-input"><?php echo $Email; ?></a>
 
 <?php endif; ?>
 
@@ -28,10 +29,12 @@
 
 
 
-<P>
+<p class = "address123">
 <?php if (strlen(trim($Address)) > 0) : ?>
 
-<span class = "Address">Address:</span>
+
+
+<i class="fa fa-map-marker"></i>
 
 <?php echo $Address; ?>
 

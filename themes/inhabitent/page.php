@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class = "side-main-container">
 				<main id="main" class="site-main" role="main">
 
-			
+			<div class = "blogpost-reel">
 				<h2 class = "about-us-text321">find us </h2>
 
 				<div class = "google-maps">
@@ -30,10 +30,22 @@ get_header(); ?>
 				
 
 		
-
+					<form method="post" class="user-form">
+				<p>name <span class="color-star">*</span></p>
+				<input name="name">
+				<p>email <span class="color-star">*</span></p>
+				<input name="email">
+				<p>subject <span class="color-star">*</span></p>
+				<input name="subject">
+				<p>message <span class="color-star">*</span></p>
+				<textarea name="message" class="user-form-message" cols="40" rows="10"></textarea>
+			</form>
+			<div class="submit-button">
+				<a class = "submit-button-text">submit</a>
+			</div>
 		
 		
-					
+				</div>
 					
 					</main><!-- #main -->
 					<?php get_sidebar(); ?>

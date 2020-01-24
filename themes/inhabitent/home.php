@@ -24,11 +24,15 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-                <?php
+               <div class = "blogpost-reel"> <?php
             
 					get_template_part( 'template-parts/content', 'blogpost' );
 				?>
+			<p class = "read-more-btn-container">
+				<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn">Read more →</a>
+		</p>
 
+		</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
