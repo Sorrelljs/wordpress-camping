@@ -12,18 +12,15 @@ get_header(); ?>
 
 		<?php if (have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="page-header999">
 
 			<?php
 				$taxonomy = get_queried_object();
 			?>
 				<h1 class="page-title"><?php echo $taxonomy->name;?></h1>
-				<div class="taxonomy-description">
-					<p><?php echo $taxonomy->description;?></p>
-				</div>
+					<p class= "taxonomy555333"><?php echo $taxonomy->description;?></p>
 			</header>
 
-            <hr/>
             
             
 
