@@ -1,92 +1,84 @@
-.journal_title{
-    font-family: Novecento Sans Web,sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    max-width: 58%;
-    text-decoration: none;
-    color: #fff;
-    background-color: #248a83;
-    font-size: 21px;
-    position: absolute;
-    left: 0;
-    padding-top: 0px;
-    margin-top: 25px;
-    &:hover {
-        color: rgb(240, 240, 186);
-    }
+.journal_title {
+  font-family: Novecento Sans Web, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  max-width: 58%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #248a83;
+  font-size: 21px;
+  position: absolute;
+  left: 0;
+  padding-top: 0px;
+  margin-top: 25px;
+  &:hover {
+    color: rgb(240, 240, 186);
+  }
 }
 
 .blogpost-reel {
-    position: relative;
-    left: 70px;
-    top: 70px;
+  position: relative;
+  left: 70px;
+  top: 70px;
 }
 
 .entry-meta {
-    background-color: #248a83;
-    color: #fff;
-    display: inline-block;
-    font-family: Novecento Sans Web,sans-serif;
-    position: relative;
-    margin-right: 40p;
-    bottom: 10px;
-    text-transform: uppercase;
-    padding: 3px;
-    left: 297px;
-    bottom: 37px;
-    width: 39%;
+  background-color: #248a83;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web, sans-serif;
+  position: relative;
+  margin-right: 40p;
+  bottom: 10px;
+  text-transform: uppercase;
+  padding: 3px;
+  left: 297px;
+  bottom: 37px;
+  width: 39%;
 }
 .entry-content {
-width: 646px;
-position: relative;
-bottom: 14px;
+  width: 646px;
+  position: relative;
 }
-
 
 // read more btn
 
 .read-more-btn-container {
-    position: relative;
-    z-index: 3;
-    border: 1px solid black;
-    padding: 10px;
-    width: 14%;
-    box-shadow: black;
-    
+  position: relative;
+  margin-top: 15px;
+  z-index: 2;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 14%;
+  box-shadow: #000;
 }
 
 .read-more-btn-container:hover {
-    background-color: #248a83;
+  background-color: #248a83;
 
-    .read-more-btn:hover {
-        color: white;
-    }
-    
-
+  .read-more-btn:hover {
+    color: white;
+  }
 }
 .read-more-btn {
-    color:black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
-
-
-
 .email-input {
-    color: #248A83;
-    text-decoration: none;
+  color: #248a83;
+  text-decoration: none;
 }
 
 .phone-input {
-    color: #248A83;
-    text-decoration: none;
+  color: #248a83;
+  text-decoration: none;
 }
 
 .days-of-the-week {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .address123 {
-    width: 76%;
-
+  width: 76%;
 }

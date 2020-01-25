@@ -40,7 +40,7 @@
 .price-tag {
   font-size: 0.9rem;
   padding: 0.75rem 1rem;
-  float: right;
+  margin-left: 32px;
   padding-left: 0.25rem;
 }
 
@@ -105,7 +105,6 @@
 
 header.entry-header {
   position: relative;
-  top: 112px;
 }
 
 .black-btn,
