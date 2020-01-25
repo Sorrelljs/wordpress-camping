@@ -1,43 +1,34 @@
-∂<?php
+  
+<?php
 /**
- * The template for displaying archive pages.
+ * Template part for displaying single posts.
  *
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div class="product-image-wrapper">
+		<img width="640" height="480" src="<?php echo CFS()->get( 'image' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 640px) 100vw, 640px"> 
+	</div>
 
-		<?php if ( have_posts() ) : ?>
+    <div class="product-content-wrapper">
+        <header class="entry-header">
+            <h1 class="entry-title"><?php the_title(); ?></h1> </header>
+        <!-- .entry-header -->
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+        <div class="entry-content">
+            <p class="price">$155.00</p>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+            <p><?php the_content();?></p>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+            <div class="social-buttons">
+		<button type="button" class="black-btn"><i class="fa fa-facebook"></i>Like</button>
+		<button type="button" class="black-btn"><i class="fa fa-twitter"></i>Tweet</button>
+		<button type="button" class="black-btn"><i class="fa fa-pinterest"></i>Pin</button>
+		</div>
+				</div>
+        <!-- .entry-content -->
+    </div>
+</article>

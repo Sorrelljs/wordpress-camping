@@ -28,29 +28,35 @@
 				</div><!-- .site-branding -->
 
 		
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				
 
-				<div class = "logo">
-					<a href ="https://tent.academy.red/" rel = "home">
-					<h1 class = "site-title">Inhabitent</h1>
-					</a>
+
+
+				<?php if (is_page('front page') || is_page('About') ): ?>
+					<nav id="site-navigation2" class="main-navigation" role="navigation">
+				<?php else: ?>
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php endif;?>
+
+
+
+
+
+					<div class = "logo" id = "logo2">
+						<a href ="https://tent.academy.red/" rel = "home">
+						<h1 class = "site-title">Inhabitent</h1>
+						</a>
 					</div>
-					
+						
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class = "header-search">
-						<form role = "search" method = "Get"  class = "search-form" action = "https://tent.academy.red/">
-							<!-- <fieldset> <a href ="#" class = "search-toggle" aria-hidden = "true">
-								<i class = "fa fa-search"> </i>
-						</a>
-							<label>
-							<input type="search" class="search-field" placeholder="Type and hit enter..." value="" name="s" title="Search for:">
-						</label>
-						<input type="submit" id="search-submit" class="screen-reader-text" value="Search">
-						</fieldset>
-						-->
-						</form>
-						</div>
-						</nav> 
+
+
+
+
+					<div class = "header-search-bar">
+						<?php get_search_form(); ?>
+					</div>
+				</nav> 
 			</header>  
 			<div id="content" class="site-content">

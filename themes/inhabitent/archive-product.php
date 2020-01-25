@@ -21,7 +21,7 @@
 		<div class ="product-type-wrapper123">
 		<?php foreach ($taxonmies as $term) : ?>
 		
-						<?php echo $term->name;?>
+						<a class = "a-link-tag" href ="<?php echo get_term_link($term) ?>"> <?php echo $term->name;?> </a>
 				<?php endforeach;?>
 		</div>
 		

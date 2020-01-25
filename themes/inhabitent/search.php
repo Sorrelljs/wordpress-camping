@@ -22,6 +22,7 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
 
 			<?php endwhile; ?>
+			
 
 			<?php red_starter_numbered_pagination(); ?>
 

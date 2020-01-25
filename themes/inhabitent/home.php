@@ -29,7 +29,7 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'blogpost' );
 				?>
 			<p class = "read-more-btn-container">
-				<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn">Read more →</a>
+				<a href=<?php echo esc_url (get_permalink() ) ?> class="read-more-btn">Read more →</a>
 		</p>
 
 		</div>

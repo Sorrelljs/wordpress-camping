@@ -15,7 +15,7 @@ get_header(); ?>
 </div>
 </section>
 
-        <?php $taxonmies = get_terms('product_type');?>
+       <?php $taxonmies = get_terms('product_type');?>
 
 <section class ="product-info-container">
             <h2 class = "shop-stuff-title">Shop Stuff </h2>
@@ -26,9 +26,10 @@ get_header(); ?>
             <img class = "icon-image" src = "<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term ->slug . '.svg'?>"/>
             <p class = "product-type-blocks"><?php echo $term->description; ?></p>
             <div class = "btn-container">
-               <p class = "product-type-button"><?php echo $term->name;?></p></div>
+               <a href= " <?php echo get_term_link($term->term_id);?>" class = "product-type-button">
+               <?php echo $term->name;?></a></div>
         </div>
-
+ 
         <?php endforeach;?>
 
         </div>

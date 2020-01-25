@@ -2,11 +2,11 @@
     font-family: Novecento Sans Web,sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    max-width: 47%;
+    max-width: 58%;
     text-decoration: none;
     color: #fff;
     background-color: #248a83;
-    font-size: 18px;
+    font-size: 21px;
     position: absolute;
     left: 0;
     padding-top: 0px;
@@ -32,9 +32,9 @@
     bottom: 10px;
     text-transform: uppercase;
     padding: 3px;
-    padding: 3px;
-    left: 312px;
+    left: 297px;
     bottom: 37px;
+    width: 39%;
 }
 .entry-content {
 width: 646px;
@@ -55,10 +55,21 @@ bottom: 14px;
     
 }
 
+.read-more-btn-container:hover {
+    background-color: #248a83;
+
+    .read-more-btn:hover {
+        color: white;
+    }
+    
+
+}
 .read-more-btn {
     color:black;
     text-decoration: none;
 }
+
+
 
 
 .email-input {
@@ -73,4 +84,9 @@ bottom: 14px;
 
 .days-of-the-week {
     font-weight: 600;
+}
+
+.address123 {
+    width: 76%;
+
 }
