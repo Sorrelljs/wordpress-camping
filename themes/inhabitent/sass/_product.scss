@@ -1,9 +1,6 @@
 /****** SHOP PAGE **********/
 
 .whole-content-block {
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .content-container {
@@ -26,12 +23,12 @@
 }
 
 .shop-title123 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   padding: 0.75rem 1rem;
   display: inline;
   font-size: 1rem;
   font-weight: 400;
-  font-family: Merriweather Web, serif;
+  font-family: Merriweather, sans-serif;
   letter-spacing: 0;
   line-height: 1.75;
   text-transform: none;
@@ -94,7 +91,6 @@
 
 .entry-content1234 {
   width: 625px;
-  margin-top: 144px;
 }
 
 .price-tag1234 {
@@ -131,6 +127,7 @@ header.entry-header {
   font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-top: 100px;
 }
 
 .black-btn:hover {
@@ -143,4 +140,24 @@ header.entry-header {
   font-size: 1.8rem;
   margin-top: 0;
   text-transform: uppercase;
+}
+
+// content product taxonomies
+
+.grid-product-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.taxonomy-product-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1e1e1;
+}
+
+.taxonomy-product-type-wrapper {
+  background: #e1e1e1;
+  display: flex;
+  width: 300px;
 }

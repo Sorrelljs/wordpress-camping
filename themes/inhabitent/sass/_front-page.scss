@@ -1,7 +1,7 @@
 .home-hero {
   align-items: center;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
-    #969696 url('../../images/home-hero.jpg') no-repeat top;
+    #969696 url("../../images/home-hero.jpg") no-repeat top;
   background-size: cover, cover;
   display: -ms-flexbox;
   display: flex;
@@ -12,10 +12,19 @@
 }
 
 .logo-hero {
-  background: url('../../images/logos/inhabitent-logo-full.svg');
+  background: url("../../images/logos/inhabitent-logo-full.svg");
   background-repeat: no-repeat;
   height: 275px;
   width: 275px;
+}
+
+// nav bar fixed ///
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: rgb(36, 138, 131);
 }
 
 .shop-stuff-title {
@@ -55,8 +64,8 @@
   max-width: 260px;
   align-items: center;
   border: 1px solid #e1e1e1;
-  border-top: 3px solid #a1a1a1;
   margin: 3% auto;
+  border-top-width: 5px;
 }
 
 .icon-image {

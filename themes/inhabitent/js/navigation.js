@@ -4,9 +4,21 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-(function() {
-  let container, button, menu, links, i, len;
 
+
+(function ($) {
+  let container, button, menu, links, i, len;
+  const num = 400;
+
+  $(window).bind('scroll', function () {
+
+
+    if ($(window).scrollTop() > num) {
+      $('.site-header').addClass('fixed');
+    } else {
+      $('.site-header').removeClass('fixed');
+    }
+  });
   container = document.getElementById('site-navigation');
   if (!container) {
     return;
@@ -30,7 +42,7 @@
     menu.className += ' nav-menu';
   }
 
-  button.onclick = function() {
+  button.onclick = function () {
     if (-1 !== container.className.indexOf('toggled')) {
       container.className = container.className.replace(' toggled', '');
       button.setAttribute('aria-expanded', 'false');
@@ -75,7 +87,7 @@
   /**
    * Toggles `focus` class to allow submenu access on tablets.
    */
-  (function(container) {
+  (function (container) {
     let touchStartFn,
       i,
       parentLink = container.querySelectorAll(
@@ -83,7 +95,7 @@
       );
 
     if ('ontouchstart' in window) {
-      touchStartFn = function(e) {
+      touchStartFn = function (e) {
         let menuItem = this.parentNode,
           i;
 
@@ -105,5 +117,11 @@
         parentLink[i].addEventListener('touchstart', touchStartFn, false);
       }
     }
+
   })(container);
-})();
+
+})(jQuery);
+
+
+
+// fixed navbar 

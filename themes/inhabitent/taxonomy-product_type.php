@@ -25,9 +25,8 @@ get_header(); ?>
             
 
             <?php /* Start the Loop */ ?>
-            <section class = "content-container">
-            <div class="grid-container">
-				<div class="grid-container-wrapper123">
+            <section class = "content-product-container">
+            <div class="grid-product-container">
 					<?php while (have_posts() ) : the_post(); ?>
 
 						<?php
@@ -35,7 +34,7 @@ get_header(); ?>
 						?>
 
 					<?php endwhile; ?>
-				</div>
+				
             </div>
         </section>
 
@@ -46,6 +45,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+	
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
