@@ -1,6 +1,12 @@
 <!-- This file is used to markup the public-facing widget. -->
 
 
+<?php if (strlen(trim($title)) > 0) : ?>
+    <h1 class = "phone123">
+    <?php echo $title; ?>
+    </h1>
+<?php endif; ?>
+
 
 <p class = "phone123">
 <?php if (strlen(trim($Phone)) > 0) : ?>

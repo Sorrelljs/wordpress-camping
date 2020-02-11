@@ -6,6 +6,19 @@
   position: absolute;
   text-shadow: 1px 1px 2px #323232;
 }
+// Maybe change if you get chance // *******
+.menu li a {
+  color: red;
+}
+
+.menu_options ul li a {
+  color: white;
+}
+
+.menu_options_green ul li a {
+  color: #248a83;
+  text-shadow: none;
+}
 
 .site-header {
   position: absolute;
@@ -29,6 +42,15 @@
 
 .logo {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  display: inline-block;
+  position: relative;
+  bottom: 6px;
+  left: 65px;
+}
+
+.logo2 {
+  background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
   background-size: 50px 33px;
   display: inline-block;
   position: relative;

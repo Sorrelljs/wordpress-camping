@@ -4,6 +4,9 @@
  *
  * @package RED_Starter_Theme
  */
+$nav_colors = 'menu_options';
+$nav_icon = 'icon-search';
+$logo_green = 'logo2';
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -33,22 +36,29 @@
 
 
 				<?php if (is_page('front page') || is_page('About') ): ?>
-					<nav id="site-navigation2" class="main-navigation" role="navigation">
-				<?php else: ?>
+					 <nav id="site-navigation2" class="main-navigation" role="navigation"> 
+
+					<?php $logo_green = 'logo'; ?>
+				<?php else: $nav_colors='menu_options_green'; $nav_icon = '#icon-search' ?>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
+					
+
+					
 				<?php endif;?>
 
 
 
 
 
-					<div class = "logo" id = "logo2">
+					<div class = <?php echo $logo_green ?>>
 						<a href = <?php echo home_url()?>>
 						<h1 class = "site-title">Inhabitent</h1>
 						</a>
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+					<div class="<?php echo $nav_colors; ?>">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					</div>
 
 
 
