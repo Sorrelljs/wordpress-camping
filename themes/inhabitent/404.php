@@ -15,11 +15,11 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
+				<header class="page-header-404">
 					<h1 class="page-title-404"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="page-content-404">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
