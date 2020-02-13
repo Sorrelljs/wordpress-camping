@@ -14,7 +14,7 @@
 	</div>
 
     <div class="product-content-wrapper">
-        <header class="entry-header">
+        <header class="entry-header entry-header-archive">
             <h1 class="entry-title"><?php the_title(); ?></h1> </header>
         <!-- .entry-header -->
 

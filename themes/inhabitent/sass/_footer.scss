@@ -1,9 +1,7 @@
 .site-footer {
-  background: url('../../images/dark-wood@2x.png');
+  background: url("../../images/dark-wood@2x.png");
   background-size: contain;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
   color: #fff;
   line-height: 1.75;
 }
@@ -21,27 +19,12 @@
   padding-left: 75px;
 }
 
-.footer-logo {
-  grid-column: 3;
-  margin: 3rem 0;
-}
-
 .text-logo {
   background-repeat: no-repeat;
   margin-top: 2rem;
   max-width: 80%;
   background-size: contain;
   margin: 3rem 0;
-}
-
-.container {
-  grid-column: 2 / span 3;
-  grid-row: 2;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  right: 100px;
-  bottom: 20px;
 }
 
 .logo-footer {
@@ -55,13 +38,13 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 19.2px;
-  font-family: 'Merriweather Web', sans-serif;
+  font-family: "Merriweather Web", sans-serif;
 }
 
 .links-footer {
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Merriweather Web', sans-serif;
+  font-family: "Merriweather Web", sans-serif;
 }
 .links-footer:hover {
   text-decoration: underline;
@@ -71,4 +54,97 @@
 .icons-fa {
   font-size: 1.25rem;
   margin-right: 0.5rem;
+}
+
+footer {
+  aside#contact-info-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-media-wrap {
+    display: flex;
+  }
+
+  .wrapper-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  a.phone-input {
+    color: white;
+  }
+  a.email-input {
+    color: white;
+  }
+
+  .address123 {
+    width: 76%;
+    display: none;
+  }
+
+  .footer-container-wrap {
+    padding-left: 30px;
+    margin-top: 29px;
+  }
+
+  .wrapper-footer {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    line-height: 0;
+  }
+
+  h1 {
+    color: #d99054;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  h2.widget-title {
+    display: none;
+  }
+}
+
+.container {
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-self: flex-end;
+  height: 50px;
+}
+.footer-logo {
+  margin: 3rem 0;
+  height: 70px;
+}
+
+img.inhabitent-logo-footer {
+  width: 76%;
+}
+
+.footer-logo {
+  margin: 3rem 0;
+  height: 70px;
+  position: absolute;
+  right: -23px;
+}
+
+aside#business-hours-4 {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5;
+  padding-left: 60px;
+  margin-top: 55px;
+}
+
+aside#contact-info-6 {
+  display: flex;
+  margin-top: 29px;
+}
+
+.social-media-wrap {
+  justify-content: flex-start;
+  padding-left: 50px;
+  margin-bottom: 20px;
 }

@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<div class = "Test123"> <?php get_template_part( 'template-parts/content', 'search' ); ?> </p>
 				
-				<p class = "read-more-btn-container123">
+				<p class = "read-more-btn-container1234">
 								<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn123">Read entry</a>
 						</p>
 			<?php endwhile; ?>

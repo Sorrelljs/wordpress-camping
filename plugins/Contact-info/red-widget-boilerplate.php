@@ -97,7 +97,7 @@ class Contact_info extends WP_Widget {
 		$widget_string = $before_widget;
 
 		// Manipulate the widget's values based on their input fields
-		$title = empty( $instance['Title'] ) ? '' : apply_filters( 'widget_title', $instance['Title'] );
+		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 		$Phone = empty( $instance['Phone'] ) ? '' : apply_filters( 'Phone', $instance['Phone'] );
 		$Email = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
 		$Address = empty( $instance['Address'] ) ? '' : apply_filters( 'Address', $instance['Address'] );
@@ -134,7 +134,7 @@ class Contact_info extends WP_Widget {
 
 		$instance = $old_instance;
 
-		$instance['Title'] = strip_tags( $new_instance['Title'] );
+		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['Phone'] = strip_tags( $new_instance['Phone'] );
 		$instance['Email'] = strip_tags( $new_instance['Email'] );
 		$instance['facebook'] = strip_tags( $new_instance['facebook'] );
