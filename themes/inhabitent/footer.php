@@ -10,43 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-
-			<div class ="contact">
-			<h3 class = "title-h3">Contact Info</h3>
-
-			<p>
-			<i class="fa fa-envelope"></i>
-			<a href class = "links-footer"="info@inhabitent.com">info@inhabitent.com</a>
-			</p>
-
-			<p>
-			<i class="fa fa-phone"></i>
-			<a href class = "links-footer"="tel">778-456-7891</a>
-		    </p>
-
-			<p>
-			<span class = "icons-fa"> <i class="fa fa-facebook-square"></i> </span>
-			<span class = "icons-fa"> <i class="fa fa-twitter-square"></i> </span>
-			<span class = "icons-fa"> <i class="fa fa-google-plus-square"></i> </span>
-			</p>
-
-			</div>
-
-
-
-			<div class ="business-hours">
-			<h3 class = "title-h3">Business Hours</h3>
-			<p> <span class="day-of-week">Monday-Friday:</span> 9am to 5pm</p>
-			<p> <span class="day-of-week">Saturday:</span>  10am to 2pm </p>
-			<p> <span class="day-of-week">Sunday:</span>  Closed </p>
-			</div>
-
-			<div class ="footer-logo"></div>
-			<div class="text-logo">
-							<a href="https://tent.academy.red/" rel="home">
-								<img class = "logo-footer" src= "<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent logo">
-							</a>
-						</div>
+		<?php dynamic_sidebar("footer"); ?>
 			
 
 			<div class="container">

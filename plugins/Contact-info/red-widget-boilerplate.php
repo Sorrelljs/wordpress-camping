@@ -101,6 +101,10 @@ class Contact_info extends WP_Widget {
 		$Phone = empty( $instance['Phone'] ) ? '' : apply_filters( 'Phone', $instance['Phone'] );
 		$Email = empty( $instance['Email'] ) ? '' : apply_filters( 'Email', $instance['Email'] );
 		$Address = empty( $instance['Address'] ) ? '' : apply_filters( 'Address', $instance['Address'] );
+		$facebook = empty( $instance['facebook'] ) ? '' : apply_filters( 'facebook', $instance['facebook'] );
+		$twitter = empty( $instance['twitter'] ) ? '' : apply_filters( 'twitter', $instance['twitter'] );
+		$google = empty( $instance['google'] ) ? '' : apply_filters( 'google', $instance['google'] );
+		
 		
 		// TODO: other fields go here...
 
@@ -133,7 +137,11 @@ class Contact_info extends WP_Widget {
 		$instance['Title'] = strip_tags( $new_instance['Title'] );
 		$instance['Phone'] = strip_tags( $new_instance['Phone'] );
 		$instance['Email'] = strip_tags( $new_instance['Email'] );
+		$instance['facebook'] = strip_tags( $new_instance['facebook'] );
+		$instance['twitter'] = strip_tags( $new_instance['twitter'] );
+		$instance['google'] = strip_tags( $new_instance['google'] );
 		$instance['Address'] = strip_tags( $new_instance['Address'] );
+		
 	
 		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
@@ -155,15 +163,22 @@ class Contact_info extends WP_Widget {
 				'title' => 'Contact info',
 				'Phone' => '604704',
 				'Email' => 'jimmy@jimmy.com',
-				'Address' => '18316666 robson street'
+				'Address' => '18316666 robson street',
+				'facebook' => '',
+				'twitter' => '',
+				'google' => '',
 			)
 		);
 
-		$title = strip_tags( $instance['Title'] );
+		$title = strip_tags( $instance['title'] );
 		$Phone = strip_tags( $instance['Phone'] );
 		$Email = strip_tags( $instance['Email'] );
 		$Address = strip_tags( $instance['Address'] );
-	
+		$facebook = strip_tags( $instance['facebook'] );
+		$twitter = strip_tags( $instance['twitter'] );
+		$google = strip_tags( $instance['google'] );
+		
+		
 		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form

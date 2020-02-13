@@ -7,20 +7,28 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	
+	
+<div class = "side-main-container">
+			<main id="main" class="site-main-search" role="main">
+
+			<!-- <?php the_title(); ?> -->
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<header class="page-header-search">
+				<h1 class="page-title-search"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
+				<div class = "Test123"> <?php get_template_part( 'template-parts/content', 'search' ); ?> </p>
+				
+				<p class = "read-more-btn-container123">
+								<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn123">Read entry</a>
+						</p>
 			<?php endwhile; ?>
 			
 

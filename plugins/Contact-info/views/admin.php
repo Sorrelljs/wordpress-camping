@@ -29,4 +29,25 @@
 
 </div>
 
+<div class="facebook-content">
+   <p><label for="<?php echo $this->get_field_id('facebook'); ?>">facebook:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo $facebook; ?>">
+   </p>
+
+</div>
+
+<div class="twitter-content">
+   <p><label for="<?php echo $this->get_field_id('twitter'); ?>">twitter:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo $twitter; ?>">
+   </p>
+
+</div>
+
+<div class="google-content">
+   <p><label for="<?php echo $this->get_field_id('google'); ?>">google:</label>
+		<input class="widefat" id="<?php echo $this->get_field_id('google'); ?>" name="<?php echo $this->get_field_name('google'); ?>" type="text" value="<?php echo $google; ?>">
+   </p>
+
+</div>
+
 

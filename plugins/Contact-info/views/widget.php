@@ -48,3 +48,44 @@
 
 </p>
 
+<p class = "facebook">
+<?php if (strlen(trim($facebook)) > 0) : ?>
+
+
+
+<i class="fa fa-facebook-square">
+
+    <a href="<?php echo $facebook; ?>"></a>
+</i>
+
+
+<?php endif; ?>
+
+</p>
+
+<p class = "twitter">
+<?php if (strlen(trim($twitter)) > 0) : ?>
+
+
+
+<i class="fa fa-twitter-square"></i>
+<a href="<?php echo $twitter; ?>"></a>
+
+
+<?php endif; ?>
+
+</p>
+
+<p class = "google">
+<?php if (strlen(trim($google)) > 0) : ?>
+
+
+
+<i class="fa fa-google-plus-square"></i>
+<a href="<?php echo $google; ?>"></a>
+
+
+<?php endif; ?>
+
+</p>
+
