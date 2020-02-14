@@ -56,6 +56,11 @@ $logo_green = 'logo2';
 						</a>
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+				<div class = "menu-search-container">	
+					<div class = "header-search-bar">
+						<?php get_search_form(); ?>
+					</div>
+					
 					<div class="<?php echo $nav_colors; ?>">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
@@ -63,8 +68,6 @@ $logo_green = 'logo2';
 
 
 
-					<div class = "header-search-bar">
-						<?php get_search_form(); ?>
 					</div>
 				</nav> 
 			</header>  

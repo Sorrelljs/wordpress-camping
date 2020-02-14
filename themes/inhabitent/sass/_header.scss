@@ -70,11 +70,12 @@
   padding-left: 1.5rem;
 }
 
-.menu-menu-container {
-  position: relative;
-  left: 390px;
+.menu-search-container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  margin-right: 100px;
 }
-
 #site-navigation {
   position: relative;
   bottom: 14px;
@@ -102,12 +103,6 @@
   margin: 0;
 }
 
-.header-search-bar {
-  position: relative;
-  bottom: 6px;
-  right: 59px;
-}
-
 .page-header999 {
   display: -ms-flexbox;
   display: flex;
@@ -124,4 +119,24 @@
   font-family: Merriweather Web, serif;
   font-size: 1.2rem;
   line-height: 1.75;
+}
+
+// SEARCH BAR ICON
+
+input.search-field {
+  background: transparent;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  order: -1;
+  outline: none;
+  width: 200px;
+  /* padding-top: 3px; */
+  /* padding-right: 40px;*/
+}
+
+form.search-form {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
 }
