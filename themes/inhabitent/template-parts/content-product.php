@@ -12,7 +12,7 @@
 
 			<div class = "taxonomy-product-type-wrapper">
 
-		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><img width="640" height="480"
+		<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><img 
 		 src="<?php echo CFS()->get( 'Image' ); ?>" class="shop-product-image"  sizes="(max-width: 640px) 100vw, 640px"></a>			
 
 		 </div>

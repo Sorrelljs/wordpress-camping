@@ -58,7 +58,7 @@ get_header(); ?>
 
 
 <p class = "read-more-btn-container123">
-				<a href="https://tent.academy.red/van-camping-photo-contest/" class="read-more-btn123">Read entry</a>
+<a href=<?php echo esc_url (get_permalink() ) ?> class="read-more-btn123">Read entry</a>
 		</p>
    </article>
 

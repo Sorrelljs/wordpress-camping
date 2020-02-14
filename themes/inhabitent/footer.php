@@ -13,7 +13,7 @@
 	
 		<div class = "footer-logo">
 			<a href = <?php echo home_url()?>>
-				<img src = "../../wordpress/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg" 
+				<img src = "<?php echo get_template_directory_uri()?>/images/logos/inhabitent-logo-text.svg" 
 				alt="inhabitent logo" class = "inhabitent-logo-footer">
 			</a>
 		</div>
