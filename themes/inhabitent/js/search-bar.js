@@ -16,6 +16,11 @@
 
   });
 
+  $(".submit-button").click(function () {
+    alert("Your message was sent");
+
+  });
+
 
 
 
