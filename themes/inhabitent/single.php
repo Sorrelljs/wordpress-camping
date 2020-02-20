@@ -8,22 +8,27 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div class = "side-main-container">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<main id="main" class="site-main-single" role="main">
 
-			<?php get_template_part( 'template-parts/content-product-single'); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<div class = "blogpost-reel"> <?php get_template_part( 'template-parts/content-product-single'); ?>
 
-		<?php endwhile; // End of the loop. ?>
+					<?php
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+					?>
+				</div>
+
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
