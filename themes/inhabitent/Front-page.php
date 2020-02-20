@@ -51,9 +51,12 @@ get_header(); ?>
    <img class = "images-1010" src = "<?php echo get_the_post_thumbnail_url(); ?>">
    <span class = "date-post"><?php echo get_the_date(); ?>
    
-   <?php comments_number() ?>
-   <h3 class = "title-post"><?php echo get_the_title(); ?>
-</h3>
+   <?php comments_number() ?></span>
+
+   <br>
+
+   <a href = "<?php echo get_permalink(); ?>" class = "title-post-front"><?php echo get_the_title(); ?>
+</a>
 
 
 
