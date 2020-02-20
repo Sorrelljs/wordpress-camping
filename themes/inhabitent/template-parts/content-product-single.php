@@ -13,7 +13,7 @@
             <h1 class="single_title"><?php the_title(); ?></h1> 
         </header>
     <div class="blog-post-single">
-		<!-- <img width="640" height="480" src="<?php echo CFS()->get( 'Image' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 640px) 100vw, 640px">  -->
+		<img width="640" height="480" src="<?php echo CFS()->get( 'Image' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 640px) 100vw, 640px"> 
         <?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
