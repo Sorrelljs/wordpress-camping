@@ -5,6 +5,7 @@
 !themes/
 !uploads/
 !README.md
+!inhabitent.gif
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/product-functions/
