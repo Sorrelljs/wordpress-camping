@@ -2,6 +2,9 @@
 
 # Project Title
 
+![](inhabitent.gif)
+
+
 Inhabitent (Powered by wordpress!_
 ## Getting Started
 
